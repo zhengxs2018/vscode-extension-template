@@ -1,0 +1,54 @@
+{
+  "name": "ext-name",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "fmt": "prettier \"src/**/*.ts\" -w",
+    "pack": "vsce package --no-dependencies",
+    "release": "vsce publish --no-dependencies"
+  },
+  "icon": "logo.png",
+  "displayName": "插件名称",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [],
+    "configuration": {}
+  },
+  "main": "./out/extension.js",
+  "files": [
+    "out",
+    "logo.png"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "16.x",
+    "@types/vscode": "1.64.0",
+    "bumpp": "^8.2.1",
+    "rimraf": "^3.0.2",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4",
+    "vsce": "^2.10.0"
+  },
+  "homepage": "https://github.com/zhengxs2018/vscode-extension-template#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhengxs2018/vscode-extension-template"
+  },
+  "bugs": {
+    "url": "https://github.com/zhengxs2018/vscode-extension-template/issues"
+  },
+  "engines": {
+    "node": ">=12",
+    "vscode": ">=1.64.0"
+  },
+  "author": "联众智慧科技股份有限公司",
+  "publisher": "mdfe",
+  "license": "SEE LICENSE IN LICENSE"
+}
